@@ -16,6 +16,4 @@ body{
     background: ${({ theme }) => theme.colors.mainColor};
 }
 
-
-
 `;
