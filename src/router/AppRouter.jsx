@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
@@ -11,6 +11,9 @@ import Register from "../pages/register/Register";
 import PrivateRouter from "./PrivateRouter";
 import { GlobalStyles } from "../styles/Global.styles";
 const AppRouter = () => {
+  const [currentUser, setCurrentUser] = useState(
+    sessionStorage.getItem("user")
+  );
   return (
     <BrowserRouter>
       <Navbar />
