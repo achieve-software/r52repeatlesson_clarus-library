@@ -41,3 +41,13 @@ export const MenuLink = styled(NavLink)`
     color: ${({ theme }) => theme.colors.linkHoverColor};
   }
 `;
+
+
+export const HamburgerIcon = styled.div`
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: ${({ theme }) => theme.screens.lg}) {
+    display: block;
+  }
+`;
