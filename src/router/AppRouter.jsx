@@ -1,5 +1,5 @@
 import React from "react";
- 
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
@@ -17,10 +17,7 @@ const AppRouter = () => {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/login"
-          element={<Login  />}
-        />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />{" "}
         {/* <Route path="/about" element={<PrivateRouter />}>
           <Route path="" element={<About />}></Route>
