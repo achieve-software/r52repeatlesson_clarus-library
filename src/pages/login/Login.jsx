@@ -14,15 +14,16 @@ const Login = ({ setCurrentUser }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCurrentUser("alex");
-    sessionStorage.setItem("user", "alex");
+    setCurrentUser("anthony");
+    sessionStorage.setItem("user", "anthony");
     navigate(-1);
   };
+
   return (
     <LoginContainer>
       <FormContainer>
-        <StyledForm >
-          <Header>Login Here</Header>
+        <StyledForm onSubmit={handleSubmit}>
+        <Header>Login Here</Header>
           <StyledInput type="text" placeholder="Username" required />
           <StyledInput type="password" placeholder="Password" required />
           <StyledButton type="submit">Login</StyledButton>
